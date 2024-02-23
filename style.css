@@ -38,16 +38,18 @@ header{
         width: 65px;
         height: 40px;
         cursor: pointer;
+        object-fit: cover;    } 
+
+    ul{
+        display: flex;
+        gap: 45px;
+        color: var(--Darkgrayishblue);
+        font-size: 15px;
+        cursor: pointer;
     }
 }
 
-ul{
-    display: flex;
-    gap: 45px;
-    color: var(--Darkgrayishblue);
-    font-size: 15px;
-    cursor: pointer;
-}
+
 
 .main{
     display: grid;
@@ -64,8 +66,28 @@ ul{
         grid-area: new;
         background: var(--Verydarkblue);
         color: white;
-        width: 320px;
-        height: 480px;
+        padding: 25px;
+
+        >div{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        p{
+            border-bottom: 1px solid var(--Grayishblue);
+            font-size: 12px;
+            line-height: 25px;
+            color: var(--Grayishblue);
+        }
+
+        h3{
+           font-size: 16px;
+        }
+
+        h2{
+            font-size: 30px;
+            color: var(--Softorange);
+        }
     }
 
     .content{
@@ -99,5 +121,18 @@ ul{
     }
         
     }
+}
+
+.list{
+    ul{
+        display: flex
+    }
+    
+    img{ 
+    display: grid;
+    width: 100px;
+    padding-top: 20px;
+   } 
+  
 }
 
